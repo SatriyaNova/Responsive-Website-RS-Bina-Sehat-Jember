@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="widh=device-width, initial-scale=1.0">
+    <title>Rumah Sakit Bina Sehat Jember</title>
+    <link rel="stylesheet" href="binasehat.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li class="exit-button" onclick=HideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Dokter Kami</a></li>
+            <li><a href="#">Berita</a></li>
+            <li><a href="#">Kerja Sama</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Bina Sehat</a></li>
+            <li class="hideOnMobile"><a href="#">Beranda</a></li>
+            <li class="hideOnMobile"><a href="#">Layanan</a></li>
+            <li class="hideOnMobile"><a href="#">Dokter Kami</a></li>
+            <li class="hideOnMobile"><a href="#">Berita</a></li>
+            <li class="hideOnMobile"><a href="#">Kerja Sama</a></li>
+            <li class="hideOnMobile"><a href="#">Tentang Kami</a></li>
+            <li class="menu-button" onclick=ShowSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+        </ul>
+    </nav>
+
+    <script>
+        function ShowSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+        function HideSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
